@@ -1,0 +1,4 @@
+cd app 
+npm run dev
+
+run these two everyday to start

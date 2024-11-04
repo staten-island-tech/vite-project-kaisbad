@@ -27,3 +27,34 @@ h4,
 h5 {
   text-align: center;
 }
+
+.container {
+  display: flex;
+  width: 96%;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card {
+  width: 22%;
+  min-height: 25rem;
+  border: 2px solid black;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 4%;
+  box-shadow: 9px 8px black;
+  border-radius: 2rem;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}

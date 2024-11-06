@@ -32,7 +32,7 @@ const operators = [
     gender: "Female",
     side: "Attacker",
     price: 19.99,
-    image: "./public/ash.jpg",
+    image: "./public/ash.webp",
   },
   {
     name: "Azami",
@@ -53,7 +53,7 @@ const operators = [
     gender: "Male",
     side: "Attacker",
     price: 14.99,
-    image: "./public/blitz.jpg",
+    image: "./public/largeblitz.webp",
   },
   {
     name: "Brava",

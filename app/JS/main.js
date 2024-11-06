@@ -1,22 +1,22 @@
 import "../CSS/style.css";
-import "../JS/dom.js";
+import { DOMSelectors } from "../JS/dom.js";
 import { operators } from "../JS/product.js";
 
 operators.forEach((character) => console.log(character));
 
-const DOMSelectors = {
-  container: document.querySelector(".container"),
-};
+let cardHtml = "";
 
-function insertCard(i) {
-  DOMSelectors.container.insertAdjacentHTML(
-    "beforeend",
-    `<div class="card"><h2 class="header">${operators.name}</h2>
-    <li>${operators.gender}</li>
-    <li>${operators.side}</li>
-    <li>${operators.price}</li></div>
-    <img src="${operators.image}" class="card-img">`
-  );
+operators.forEach((operator) => {
+  cardHtml += `<div class="card"><h2 class="header">${operator.name}</h2>
+      <ul><li>${operator.gender}</li>
+      <li>${operator.side}</li>
+      <li>${operator.price}</li></ul>
+      <img src="${operator.image}" class="card-img"></div>
+      `;
+});
+
+function insertCard() {
+  DOMSelectors.container.insertAdjacentHTML("beforeend", cardHtml);
 }
 
 window.onload = insertCard();

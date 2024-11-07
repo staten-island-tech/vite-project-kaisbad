@@ -2,8 +2,6 @@ import "../CSS/style.css";
 import { DOMSelectors } from "../JS/dom.js";
 import { operators } from "../JS/product.js";
 
-operators.forEach((character) => console.log(character));
-
 let cardHtml = "";
 
 operators.forEach((operator) => {
@@ -18,5 +16,5 @@ operators.forEach((operator) => {
 function insertCard() {
   DOMSelectors.container.insertAdjacentHTML("beforeend", cardHtml);
 }
-
+//document.querySelector.container.cardHtml = "";
 window.onload = insertCard();

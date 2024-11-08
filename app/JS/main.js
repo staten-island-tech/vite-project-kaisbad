@@ -14,7 +14,7 @@ operators.forEach((operator) => {
 });
 
 function insertCard() {
-  DOMSelectors.container.insertAdjacentHTML("beforeend", cardHtml);
+  DOMSelectors.container.insertAdjacentHTML("afterend", cardHtml);
 }
 //document.querySelector.container.cardHtml = "";
 window.onload = insertCard();

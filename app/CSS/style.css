@@ -38,6 +38,11 @@ h5 {
 li {
   font-size: var(--h5);
 }
+.btn {
+  font-size: var(--h2);
+  justify-content: space-evenly;
+  margin: auto;
+}
 h1,
 h2,
 h3,

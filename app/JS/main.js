@@ -2,6 +2,7 @@ import "../CSS/style.css";
 import { DOMSelectors } from "../JS/dom.js";
 import { operators } from "../JS/product.js";
 
+console.log(operators.includes("Defender"));
 let cardHtml = "";
 
 operators.forEach((operator) => {
@@ -14,7 +15,14 @@ operators.forEach((operator) => {
 });
 
 function insertCard() {
-  DOMSelectors.container.insertAdjacentHTML("afterend", cardHtml);
+  DOMSelectors.container.insertAdjacentHTML("afterbegin", cardHtml);
 }
-//document.querySelector.container.cardHtml = "";
 window.onload = insertCard();
+
+/* const sortDefenders = console.log(
+  operators.foreach((operator) =>
+    operator.includes((operators.side = "Defender"))
+  )
+);
+
+console.log(sortDefenders); */

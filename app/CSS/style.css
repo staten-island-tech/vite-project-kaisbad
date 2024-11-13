@@ -6,6 +6,7 @@ body,
   padding: 0;
   box-sizing: border-box;
   font-size: 10px;
+  font-family: "Roboto Slab";
 }
 
 .warm {
@@ -49,6 +50,13 @@ h3,
 h4,
 h5 {
   text-align: center;
+}
+
+.btncontainer {
+  display: flex;
+  width: 96%;
+  margin: 2rem auto;
+  justify-content: space-around;
 }
 
 .container {

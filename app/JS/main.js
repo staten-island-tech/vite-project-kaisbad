@@ -70,4 +70,4 @@ DOMSelectors.cool.addEventListener("click", () => {
   document.body.classList.add("cool");
 });
 
-insertCard(operators);
+window.load = insertCard(operators);

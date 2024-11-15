@@ -10,7 +10,7 @@ function insertCard(operators) {
         <ul><li>${operator.gender}</li>
         <li>${operator.side}</li>
         <li>${operator.price}</li></ul>
-        <img src="${operator.image}" class="card-img"></div>
+        <img src="${operator.image}" alt="operator" class="card-img"></div>
         `;
   });
   DOMSelectors.container.insertAdjacentHTML("afterbegin", cardHtml);
